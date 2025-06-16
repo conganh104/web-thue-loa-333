@@ -1,45 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thuê Loa Quảng Bình</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thuê & Bán Loa Quảng Bình</title>
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #fefefe;
-      color: #222;
-      margin: 0;
-      padding: 2rem;
-      text-align: center;
-    }
-    h1 {
-      color: #007bff;
-    }
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 1rem 2rem;
-      background: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    a.button:hover {
-      background: #0056b3;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+    header { background: #ff6600; color: white; padding: 20px; text-align: center; }
+    section { padding: 20px; }
+    .btn { display: inline-block; margin: 10px 5px; padding: 10px 15px; color: white; background: #007bff; border-radius: 5px; text-decoration: none; }
+    .btn:hover { background: #0056b3; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; }
+    .gallery img { width: 100%; border-radius: 8px; }
+    .packages { background: #fff; border-radius: 10px; padding: 15px; margin-bottom: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    form input, form textarea { width: 100%; padding: 10px; margin: 5px 0 10px; border-radius: 5px; border: 1px solid #ccc; }
+    form button { padding: 10px 15px; background: #28a745; color: white; border: none; border-radius: 5px; }
+    footer { background: #222; color: white; text-align: center; padding: 15px; }
   </style>
 </head>
 <body>
-  <h1>Thuê & Bán Loa tại Quảng Bình</h1>
-  <p>Chuyên loa kéo, sự kiện, cưới hỏi - giao tận nơi.</p>
-  <img src="https://i.imgur.com/K9QkqvF.png" alt="Loa kéo" />
-  <p><strong>Hotline:</strong> 0911.656.611</p>
-  <a href="https://zalo.me/0911656611" class="button">Liên hệ Zalo</a>
+  <header>
+    <h1>Thuê & Bán Loa tại Quảng Bình</h1>
+    <p>Liên hệ: <a style="color: white;" href="tel:0379597965">0379 597 965</a></p>
+  </header>
+
+  <section>
+    <h2>Gói dịch vụ cho thuê loa</h2>
+    <div class="packages">
+      <p><strong>🔈 Gói loa kéo mini:</strong> Phù hợp đi chơi, dã ngoại (400.000 – 600.000đ)</p>
+      <p><strong>🎉 Gói tiệc gia đình, liên hoan:</strong> Âm thanh vừa đủ, gọn nhẹ (800.000 – 1.000.000đ)</p>
+      <p><strong>💍 Gói cưới, sân khấu nhỏ:</strong> Loa công suất lớn, có micro, mixer (1.200.000 – 1.700.000đ)</p>
+      <p><strong>🎤 Gói show lớn:</strong> Hệ thống âm thanh sân khấu, sự kiện chuyên nghiệp (2.000.000 – 3.000.000đ)</p>
+    </div>
+
+    <h2>Ảnh thực tế</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/400x250?text=Loa+1" alt="Loa thực tế">
+      <img src="https://via.placeholder.com/400x250?text=Loa+2" alt="Loa thực tế">
+      <img src="https://via.placeholder.com/400x250?text=Loa+3" alt="Loa thực tế">
+      <img src="https://via.placeholder.com/400x250?text=Loa+4" alt="Loa thực tế">
+    </div>
+
+    <h2>Đặt thuê ngay</h2>
+    <form action="https://formspree.io/f/mwkgnazn" method="POST">
+      <input type="text" name="name" placeholder="Họ tên" required>
+      <input type="tel" name="phone" placeholder="Số điện thoại" required>
+      <textarea name="message" placeholder="Gói thuê, thời gian, địa điểm..." required></textarea>
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+
+    <h2>Liên hệ nhanh</h2>
+    <a class="btn" href="tel:0379597965">📞 Gọi ngay</a>
+    <a class="btn" href="https://zalo.me/0379597965">💬 Zalo</a>
+  </section>
+
+  <footer>
+    © 2025 Thuê & Bán Loa Quảng Bình - 0379597965
+  </footer>
 </body>
 </html>
+
